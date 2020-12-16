@@ -73,7 +73,7 @@ hr {
 
 .navigation .nav-brand {
     font-weight: bolder;
-    font-size: larger;
+    font-size: xx-large;
 }
 
 .navigation .link-active {
@@ -116,6 +116,11 @@ hr {
     padding: 3rem;
     color : white;
     text-align: center;
+}
+
+.footer .footer-heading {
+    font-weight: bolder;
+    font-size: x-large;
 }
 
 .footer .link-social .link {
