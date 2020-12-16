@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --primary-color :#F87171;
+    --dark-indigo : #3730A3;
+    --light-primary : #FEE2E2;
+}
+
+/** containers **/
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+/** links **/
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+/** horizontal line **/
+hr {
+    margin : 2rem 0rem;
+}
+
+/** lists **/
+.list-no-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 1rem;
+}
+
+/** nav **/
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .nav-brand {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.navigation .link-active {
+    font-weight: bolder;
+}
+
+/** header **/
+.hero {
+    padding: 2rem;
+}
+
+.hero .hero-image{
+    margin: auto;
+    max-width: 400px;
+    display: block;
+}
+
+.hero .hero-heading {
+    padding-top: 1rem;
+    color: var(--dark-indigo);
+    text-align: center;
+}
+
+/** section **/
+.section {
+    padding: 3rem;
+}
+
+.section h3 {
+    text-align: center;
+}
+
+.ow {
+    background-color: var(--light-primary);
+}
+
+/** footer **/
+.footer {
+    background-color: var(--dark-indigo);
+    padding: 3rem;
+    color : white;
+    text-align: center;
+}
+
+.footer .link-social .link {
+    color : white;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}

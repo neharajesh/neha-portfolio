@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>neha-website</title>
-    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h1>Neha's Component Library</h1>
-    <p class = "para">Creating a component library to keep all my codes and websites consistent.</p>
+    <p>Creating a component library to keep all my codes and websites consistent.</p>
 
     <hr>
 
@@ -22,34 +23,34 @@
 
     <h2>@containers</h2>
     <h3>fluid containers</h3>
-    <div>wraps itself around the edge</div>
+    <div class="container">wraps itself around the edge</div>
     <h3>center container</h3>
-    <div>centered on the screen</div>
+    <div class="container container-center">centered on the screen</div>
 
     <hr>
     
     <h2>@links</h2>
-    <a href="https://google.com">This points to google</a>
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a href="https://google.com" class="link link-secondary">This points to google</a>
+    <a href="/" class="link link-primary">Primary Link</a>
+    <a href="/" class="link link-secondary">Secondary Link</a>
 
     <hr>
 
     <h2>@lists</h2>
     <h3>Unordered List</h3>
-    <ul>
+    <ul class="list-no-bullet">
         <li>Item one</li>
         <li>Item two</li>
         <li>Item three</li>
     </ul>
     <h3>Unordered Inline List</h3>
-    <ul>
-        <li>Inline Item one</li>
-        <li>Inline Item two</li>
-        <li>Inline Item three</li>
+    <ul class="list-no-bullet">
+        <li class="list-item-inline">Inline Item one</li>
+        <li class="list-item-inline">Inline Item two</li>
+        <li class="list-item-inline">Inline Item three</li>
     </ul>
     <h3>Reverse Ordered List</h3>
-    <ol>
+    <ol reversed>
         <li>Milk</li>
         <li>Eggs</li>
         <li>Bread</li>
@@ -58,20 +59,20 @@
     <hr>
 
     <h2>@nav</h2>
-    <nav>
-        <div>iAmNeha</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">iAmNeha</div>
+        <ul class="list-no-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
             </li>
-            <li>
-                <a href="/">Projects</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">Projects</a>
             </li>
-            <li>
-                <a href="/">Blogs</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">Blogs</a>
             </li>
-            <li>
-                <a href="/">About</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">About</a>
             </li>
         </ul>
     </nav>
@@ -79,33 +80,36 @@
     <hr>
 
     <h2>@header</h2>
-    <header>
-        <img src="images/hackermindset.svg"/>
-        <h1>Heading inside header(aka hero)</h1>
+    <header class="hero">
+        <img class="hero-image" src="images/hackermindset.svg"/>
+        <h1 class="hero-heading">Heading inside <span style="color: var(--primary-color)">header(aka hero)</span></h1>
     </header>
 
     <hr>
 
     <h2>@section</h2>
-    <h3>white section</h3>
-    <section>
-        <p>this will have white background</p>
+    <section class="section">
+        <h3>white section</h3>
+        <div class="container container-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
     </section>
-    <h3>off-white section</h3>
-    <section>
-        <p>this will have grey background</p>
+    <section class="section ow">
+        <h3>off-white section</h3>
+        <div class="container container-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
     </section>
 
     <hr>
 
     <h2>@footer</h2>
-    <footer>
-        <div>don't use h1, h2, etc tags inside the footer tag</div>
-        <div>some heading</div>
-        <ul>
-            <li>social one</li>
-            <li>social two</li>
-            <li>social three</li>
+    <footer class="footer">
+        <div class="footer-heading">some heading</div>
+        <ul class="list-no-bullet link-social">
+            <li class="list-item-inline"> <a class="link" href="/">social one </a> </li>
+            <li class="list-item-inline"> <a class="link" href="/">social two </a> </li>
+            <li class="list-item-inline"> <a class="link" href="/">social three </a> </li>
         </ul>
     </footer>
 </body>
