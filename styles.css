@@ -4,6 +4,15 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+aside {
+    display: block;
+    max-width: 38%;
+    float: right;
+    border: 1px black solid;
+    margin:auto;
+    line-height: 1rem;
+}
+
 .text {
     line-height: 0;
 }
@@ -126,7 +135,7 @@ hr {
     padding: 5rem;
     color : white;
     text-align: center;
-    
+    position: sticky;
 }
 
 .footer .footer-heading {
@@ -140,4 +149,16 @@ hr {
 
 .footer ul {
     padding-inline-start: 0px;
+}
+
+.blog-post {
+    float:left;
+    max-width: 61%;
+    position: relative;
+    min-height: 100vh;
+}
+
+.blog-content {
+    padding-bottom: 5rem;
+    margin-bottom: -50px;
 }
