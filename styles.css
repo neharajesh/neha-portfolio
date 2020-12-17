@@ -4,10 +4,15 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.text {
+    line-height: 0;
+}
+
 :root {
     --primary-color :#F87171;
     --dark-indigo : #3730A3;
     --light-primary : #FEE2E2;
+   --dark-pink : #d41340;
 }
 
 /** containers **/
@@ -26,6 +31,7 @@ body {
 .link {
     text-decoration: none;
     padding: 0.5rem 1rem;
+    line-height: 4rem;
 }
 
 .link-primary {
@@ -59,7 +65,9 @@ hr {
 .navigation {
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
     border-bottom-right-radius: 0.5rem;
 }
 
@@ -112,10 +120,11 @@ hr {
 
 /** footer **/
 .footer {
-    background-color: var(--dark-indigo);
-    padding: 3rem;
+    background-color: var(--primary-color);
+    padding: 5rem;
     color : white;
     text-align: center;
+    
 }
 
 .footer .footer-heading {
