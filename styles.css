@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -9,7 +10,7 @@ aside {
     max-width: 38%;
     float: right;
     border: 1px black solid;
-    margin:auto;
+    margin-right: 50;
     line-height: 1rem;
 }
 
@@ -24,6 +25,7 @@ aside {
    /** --light-primary : #FEE2E2;**/
    --light-primary: #E5E7EB;
    --dark-pink : #d41340;
+   --black: #1F2937;
 }
 
 /** containers **/
@@ -74,8 +76,8 @@ hr {
 
 /** nav **/
 .navigation {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--black);
+    color:var(--primary-color);
     padding-top: 2rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
@@ -92,7 +94,10 @@ hr {
 
 .navigation .nav-brand {
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: 500%;
+    padding-left: 4rem;
+    padding-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navigation .link-active {
@@ -121,7 +126,7 @@ hr {
     padding: 3rem;
 }
 
-.section h3 {
+.section h1, h2, h3 {
     text-align: center;
 }
 
@@ -131,11 +136,10 @@ hr {
 
 /** footer **/
 .footer {
-    background-color: var(--primary-color);
+    background-color: var(--black);
     padding: 5rem;
     color : white;
     text-align: center;
-    position: sticky;
 }
 
 .footer .footer-heading {
@@ -162,3 +166,35 @@ hr {
     padding-bottom: 5rem;
     margin-bottom: -50px;
 }
+
+.progress-meter { 
+    height: 0.5rem;
+    width: 60%;
+	position: relative;
+	background: black;
+	border-radius: 0.5rem;
+	padding: 0.2rem;
+}
+
+.progress-meter > span {
+    display: block;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    position: relative;
+  }
+
+  .progress-text {
+      line-height: 0.5rem;
+  }
+
+  .technologies {
+      column-count: 2;
+      column-width: 50%;
+      column-rule: sollid 1px black;
+      text-align: center;
+  }
+
+  .col2 {
+      padding-top: 1rem;
+  }
