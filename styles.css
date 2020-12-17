@@ -10,8 +10,10 @@ body {
 
 :root {
     --primary-color :#F87171;
-    --dark-indigo : #3730A3;
-    --light-primary : #FEE2E2;
+    /**--primary-color:#cf613a;**/
+    --dark-gray : #374151;
+   /** --light-primary : #FEE2E2;**/
+   --light-primary: #E5E7EB;
    --dark-pink : #d41340;
 }
 
@@ -101,8 +103,8 @@ hr {
 
 .hero .hero-heading {
     padding-top: 1rem;
-    color: var(--dark-indigo);
     text-align: center;
+    color: var(--dark-gray);
 }
 
 /** section **/
