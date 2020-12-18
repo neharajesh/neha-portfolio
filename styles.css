@@ -97,7 +97,7 @@ hr {
     font-size: 500%;
     padding-left: 4rem;
     padding-top: 3rem;
-    font-family: 'Montserrat', sans-serif;
+    /**font-family: 'Montserrat', sans-serif;**/
 }
 
 .navigation .link-active {
@@ -155,18 +155,6 @@ hr {
     padding-inline-start: 0px;
 }
 
-.blog-post {
-    float:left;
-    max-width: 61%;
-    position: relative;
-    min-height: 100vh;
-}
-
-.blog-content {
-    padding-bottom: 5rem;
-    margin-bottom: -50px;
-}
-
 .progress-meter { 
     height: 0.5rem;
     width: 60%;
@@ -198,3 +186,48 @@ hr {
   .col2 {
       padding-top: 1rem;
   }
+
+/** for columnstrial.html **/
+.blog-column {
+    padding : 1rem;
+}
+
+.column-left {
+    width: 75%;
+    padding-right: 1rem;
+    background-color: var(--light-primary);
+    align-content: center;
+    position: relative;
+    float:left;
+}
+
+.column-right {
+    width: 22%;
+    padding: 0.1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    float:right;
+    background-color:var(--primary-color);
+}
+.column-right ol {
+    padding-left: 2rem;
+    align-content: center;
+}
+
+.column-right li {
+    padding-top : 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.column-right a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.row:after {
+    content: "";
+    box-sizing: border-box;
+    display: table;
+    clear: both;
+    column-count: 3;
+}
