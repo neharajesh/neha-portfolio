@@ -40,6 +40,12 @@ aside {
     margin: auto;
 }
 
+.container-blog-text {
+    max-width: 600px;
+    text-align: left;
+    margin: auto;
+}
+
 /** links **/
 .link {
     text-decoration: none;
@@ -230,4 +236,17 @@ hr {
     display: table;
     clear: both;
     column-count: 3;
+}
+
+.blog-list {
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+.blog h1 {
+    font-size: xx-large;
+}
+
+.blog-text {
+    justify-content: left;
 }
