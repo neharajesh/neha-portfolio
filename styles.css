@@ -176,22 +176,22 @@ hr {
     border-radius: 0.5rem;
     background-color: var(--primary-color);
     position: relative;
-  }
+}
 
-  .progress-text {
-      line-height: 0.5rem;
-  }
+.progress-text {
+    line-height: 0.5rem;
+}
 
-  .technologies {
-      column-count: 2;
-      column-width: 50%;
-      column-rule: sollid 1px black;
-      text-align: center;
-  }
+.technologies {
+    column-count: 2;
+    column-width: 50%;
+    column-rule: sollid 1px black;
+    text-align: center;
+}
 
-  .col2 {
-      padding-top: 1rem;
-  }
+.col2 {
+    padding-top: 1rem;
+}
 
 /** for columnstrial.html **/
 .blog-column {
