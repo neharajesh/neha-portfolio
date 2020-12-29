@@ -88,10 +88,13 @@ hr {
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     border-bottom-right-radius: 0.5rem;
+    max-width: 100%;
 }
 
 .navigation .nav-pills {
     text-align: right;
+    font-size: 2.5vh;
+    padding-left: 0rem;
 }
 
 .navigation .link {
@@ -100,7 +103,7 @@ hr {
 
 .navigation .nav-brand {
     font-weight: bolder;
-    font-size: 500%;
+    font-size: 10vw;
     padding-left: 4rem;
     padding-top: 3rem;
     /**font-family: 'Montserrat', sans-serif;**/
@@ -117,7 +120,7 @@ hr {
 
 .hero .hero-image{
     margin: auto;
-    max-width: 400px;
+    max-width: 100%;
     display: block;
 }
 
@@ -163,11 +166,11 @@ hr {
 
 .progress-meter { 
     height: 0.5rem;
-    width: 60%;
+    width: 18vw;
 	position: relative;
 	background: black;
 	border-radius: 0.5rem;
-	padding: 0.2rem;
+    padding: 0.2rem;
 }
 
 .progress-meter > span {
@@ -179,13 +182,13 @@ hr {
 }
 
 .progress-text {
-    line-height: 0.5rem;
+    line-height: 1rem;
 }
 
 .technologies {
     column-count: 2;
-    column-width: 50%;
-    column-rule: sollid 1px black;
+    column-width: 0.5vw;
+    column-rule: solid 1px black;
     text-align: center;
 }
 
