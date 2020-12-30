@@ -94,7 +94,10 @@ hr {
 .navigation .nav-pills {
     text-align: right;
     font-size: 2.5vh;
-    padding-left: 0rem;
+}
+
+.navigation .nav-pills > li {
+    padding: 0.1rem;
 }
 
 .navigation .link {
