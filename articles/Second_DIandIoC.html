@@ -8,74 +8,69 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <nav class="navigation container">
-        <div class="nav-brand">Neha<span style="color: var(--light-primary)">Rajesh</span></div>
-        <ul class="list-no-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link" href="/">Home</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/projects.html">Projects</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link link-active" href="/blogs.html">Blogs</a>
-            </li>
-        </ul>
+    <nav>
+        <div class="brandname">NR</div>
+          <div class="container-nav">
+            <a class="nav-icon-tag" href="/">
+              <img class="nav-icon" src="../images/icons/home-filled.svg"/>
+            </a>
+            <a class="nav-icon-tag" href="/projects.html">
+              <img class="nav-icon" src="../images/icons/projects-unfilled.svg"/>
+            </a>
+            <a class="nav-icon-tag" href="/blogs.html">
+              <img class="nav-icon" src="../images/icons/blog-unfilled.svg"/>
+            </a>
+        </div>
     </nav>
 
-    <header class="hero">
-        <img class="hero-image" src="/images/webdev.svg"/>
-        <h1 class="hero-heading">Inversion of Control and Dependency Inversion</h1>
-    </header>
-
-    <div class="row">
-        <div class= "column column-right">
+    <div class="container-blogpage">
+        <div class="sidebar">
             <h3>Links to other blogs</h3>
-            <ol>
-                <li> <a href="First_IntroToSF.html">Introduction to Spring Framework</a> </li>
-                <li> <a href="Second_DIandIoC.html"><strong>Inversion of Control and Dependency Injection</strong></a> </li>
-                <li> <a href="https://google.com">This points to google</a> </li>
-            </ol>
+            <div>
+                <li> <a class="sidebar-link" href="First_IntroToSF.html">Introduction to Spring Framework</a> </li>
+                <li> <a class="sidebar-link" href="Second_DIandIoC.html">Inversion of Control and Dependency Injection</a> </li>
+                <li> <a class="sidebar-link" href="https://google.com">This points to google</a> </li>
+            </div>
         </div>
 
-        <div class="blog-column column-left">
-            <section class="blog-post section">
-                <div class="container container-blog-text">
-                    <h2>Introduction to Inversion of Control</h2>
-                     <p>Java applications, from applets to n-tier server side enterprise applications, typically consist of objects that collaborate to form the application. The objects in an application have dependencies on each other. To support this, the Java platform provides extended application development functionality. But, it lacks the means to organize the basic building blocks of an application to form a whole, leaving this task to architects and developers.</p>
+        <div class="blogpart">
+            <p class="blog-section-title">Introduction to Inversion of Control</p>
+            <p class="blog-section-content">Java applications, from applets to n-tier server side enterprise applications, typically consist of objects that collaborate to form the application. The objects in an application have dependencies on each other. To support this, the Java platform provides extended application development functionality. But, it lacks the means to organize the basic building blocks of an application to form a whole, leaving this task to architects and developers.</p>
 
-                     <p>You can use design patters such as Factory, Abstract Factory, Builder, Decorator and Service Locator to constitute the various classes and object instances that make up an application. However, these patterns are just formalized best practices which are given a name, with a description of what the pattern is, where to apply it, the problems it addresses, etc., that you must implement yourself.</p>
+            <p class="blog-section-content">You can use design patters such as Factory, Abstract Factory, Builder, Decorator and Service Locator to constitute the various classes and object instances that make up an application. However, these patterns are just formalized best practices which are given a name, with a description of what the pattern is, where to apply it, the problems it addresses, etc., that you must implement yourself.</p>
 
-                     <p>The Spring Framework Inversion of Control however, addresses this concern by providing a formalized means of composing separate components into a fully working application ready for use.</p>
+            <p class="blog-section-content">The Spring Framework Inversion of Control however, addresses this concern by providing a formalized means of composing separate components into a fully working application ready for use.</p>
 
-                     <p>The Spring Framework codifies formalized design patterns as first-class objects that you can integrate into your own applications. In this manner, Spring Framework can be used to engineer robust and maintainable applications.</p>
+            <p class="blog-section-content">The Spring Framework codifies formalized design patterns as first-class objects that you can integrate into your own applications. In this manner, Spring Framework can be used to engineer robust and maintainable applications.</p>
 
-                    <h2>What is Inversion of Control?</h2>
-                     <p>Inversion of control is a principle in software engineering by which the control of objects or portions of programs is transferred to a container or a framework. It is mostly used in object oriented programming. Inversion of control enables a framework to take control of the flow of a program and make calls to our custom code. To enable this, frameworks use abstractions with additional behaviour built in. If we want to add our own behaviour, we need to extend the classes of the framework or plugin our own classes.</p>
+            <p class="blog-section-title">What is Inversion of Control?</p>
+            <p class="blog-section-content">Inversion of control is a principle in software engineering by which the control of objects or portions of programs is transferred to a container or a framework. It is mostly used in object oriented programming. Inversion of control enables a framework to take control of the flow of a program and make calls to our custom code. To enable this, frameworks use abstractions with additional behaviour built in. If we want to add our own behaviour, we need to extend the classes of the framework or plugin our own classes.</p>
 
-                    <h2>What is Dependency Injection?</h2>
-                     <p>One way in which we can implement ioc is by using dependency injection. Dependency Injection is a pattern where the control being inverted is the setting of object's dependencies. The act of connecting objects with other objects or "injecting" objects into other objects is done by an assembler rather that by the objects themselves.</p>
+            <p class="blog-section-title">What is Dependency Injection?</p>
+            <p class="blog-section-content">One way in which we can implement ioc is by using dependency injection. Dependency Injection is a pattern where the control being inverted is the setting of object's dependencies. The act of connecting objects with other objects or "injecting" objects into other objects is done by an assembler rather that by the objects themselves.</p>
 
-                     <p><h2>Advantages of this type of architecture :</h2>
-                        <ul>
-                            <li> Decoupling the execution of a task from its implementation </li>
-                            <li> Making it easier to switch between different implementations </li>
-                            <li> Greater modularity of a program </li>
-                            <li> Greater ease in testing a program by isolating a component or mocking its dependencies and allowing components to communicate through contracts </li>
-                        </ul>
-                    </p>
-                </div>
-            </section>
+            <p>Advantages of this type of architecture :</p>
+            <li> Decoupling the execution of a task from its implementation </li>
+            <li> Making it easier to switch between different implementations </li>
+            <li> Greater modularity of a program </li>
+            <li> Greater ease in testing a program by isolating a component or mocking its dependencies and allowing components to communicate through contracts </li>
+
+
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="footer-heading">Let's Connect!</div>
-        <ul class="list-no-bullet link-social">
-            <li class="list-item-inline"> <a class="link" href="https://github.com/neharajesh">GitHub</a> </li>
-            <li class="list-item-inline"> <a class="link" href="https://www.linkedin.com/in/neha-rajesh-a95343122/">LinkedIn</a> </li>
-        </ul>
+    <footer>
+        <div>
+          <a class="nav-icon-tag" href="https://github.com/neharajesh">
+            <img class="nav-icon" src="../images/icons/github.svg"/>
+          </a>
+          <a class="nav-icon-tag" href="https://www.linkedin.com/in/neha-rajesh-a95343122/">
+            <img class="nav-icon" src="../images/icons/linkedin.svg"/>
+          </a>
+          <a class="nav-icon-tag" href="https://www.twitter.com/nehkochann/">
+            <img class="nav-icon" src="../images/icons/twitter.svg"/>
+          </a>
+        </div>
     </footer>
-
 </body>
 </html>

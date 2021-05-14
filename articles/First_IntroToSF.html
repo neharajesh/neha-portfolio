@@ -8,68 +8,62 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <nav class="navigation container">
-        <div class="nav-brand">Neha<span style="color: var(--light-primary)">Rajesh</span></div>
-        <ul class="list-no-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link" href="/">Home</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/projects.html">Projects</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link link-active" href="/blogs.html">Blogs</a>
-            </li>
-        </ul>
+    <nav>
+        <div class="brandname">NR</div>
+          <div class="container-nav">
+            <a class="nav-icon-tag" href="/">
+              <img class="nav-icon" src="../images/icons/home-filled.svg"/>
+            </a>
+            <a class="nav-icon-tag" href="/projects.html">
+              <img class="nav-icon" src="../images/icons/projects-unfilled.svg"/>
+            </a>
+            <a class="nav-icon-tag" href="/blogs.html">
+              <img class="nav-icon" src="../images/icons/blog-unfilled.svg"/>
+            </a>
+        </div>
     </nav>
 
-    <header class="hero">
-        <img class="hero-image" src="/images/webdev.svg"/>
-        <h1 class="hero-heading">Introduction to Spring Framework</h1>
-    </header>
-
-    <div class="row">
-        <div class= "column column-right">
+    <div class="container-blogpage">
+        <div class="sidebar">
             <h3>Links to other blogs</h3>
-            <ol>
-                <li> <a href="First_IntroToSF.html"><strong>Introduction to Spring Framework</strong></a> </li>
-                <li> <a href="Second_DIandIoC.html">Inversion of Control and Dependency Injection</a> </li>
-                <li> <a href="https://google.com">This points to google</a> </li>
-            </ol>
+            <div>
+                <li> <a class="sidebar-link" href="First_IntroToSF.html">Introduction to Spring Framework</a> </li>
+                <li> <a class="sidebar-link" href="Second_DIandIoC.html">Inversion of Control and Dependency Injection</a> </li>
+                <li> <a class="sidebar-link" href="https://google.com">This points to google</a> </li>
+            </div>
         </div>
+        <div class="blogpart">
+            <p class="blog-section-title">Introduction to Spring Framework</p>
+            <p class="blog-section-content">Spring Framework is an open source Java Platform that provides infrastructure support for developing high performing Java Applications.</p>
 
-        <div class="blog-column column-left">
-            <section class="blog-post section">
-                <h1>Introduction to Spring Framework</h1>
-                <div class="container container-blog-text">
-                    <p>Spring Framework is an open source Java Platform that provides infrastructure support for developing high performing Java Applications.</p>
+            <p class="blog-section-content">Enterprise Java is the use of Java for application development in enterprise-scale software, and merges a collection of APIs and application servers that implement those APIs. Spring enables you to build applications from POJOs (Plain Old Java Objects) and also to apply Enterprise Services to them. </p>
 
-                    <p>Enterprise Java is the use of Java for application development in enterprise-scale software, and merges a collection of APIs and application servers that implement those APIs. Spring enables you to build applications from POJOs (Plain Old Java Objects) and also to apply Enterprise Services to them. </p>
+            <p class="blog-section-content">Spring is the most popular application development framework for Enterprise Java. Millions of developers around the world use Spring Framework to create high performing, easily testable and reusable code. Spring handles the infrastructure so you can focus on your application.</p>
 
-                    <p>Spring is the most popular application development framework for Enterprise Java. Millions of developers around the world use Spring Framework to create high performing, easily testable and reusable code. Spring handles the infrastructure so you can focus on your application.</p>
+            <p>
+                As an application developer, you can use the Spring platform to :
+                <li> Make a Java method execute in a database transaction without having to deal with transaction APIs. </li>
+                <li> Make a local Java method a remote procedure without having to deal with remote APIs. </li>
+                <li> Make a local Java method a management operation without having to deal with JMX APIs. </li>
+                <li> Make a local Java method a message handler without having to deal with JMS APIs. </li>
+            </p>
 
-                    <p>As an application developer, you can use the Spring platform to :
-                        <ul>
-                            <li> Make a Java method execute in a database transaction without having to deal with transaction APIs. </li>
-                            <li> Make a local Java method a remote procedure without having to deal with remote APIs. </li>
-                            <li> Make a local Java method a management operation without having to deal with JMX APIs. </li>
-                            <li> Make a local Java method a message handler without having to deal with JMS APIs. </li>
-                        </ul>
-                    </p>
-
-                    <p>The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform.</p>
-                </div>
-            </section>
+            <p class="blog-section-content">The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform.</p>
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="footer-heading">Let's Connect!</div>
-        <ul class="list-no-bullet link-social">
-            <li class="list-item-inline"> <a class="link" href="https://github.com/neharajesh">GitHub</a> </li>
-            <li class="list-item-inline"> <a class="link" href="https://www.linkedin.com/in/neha-rajesh-a95343122/">LinkedIn</a> </li>
-        </ul>
+    <footer>
+        <div>
+          <a class="nav-icon-tag" href="https://github.com/neharajesh">
+            <img class="nav-icon" src="../images/icons/github.svg"/>
+          </a>
+          <a class="nav-icon-tag" href="https://www.linkedin.com/in/neha-rajesh-a95343122/">
+            <img class="nav-icon" src="../images/icons/linkedin.svg"/>
+          </a>
+          <a class="nav-icon-tag" href="https://www.twitter.com/nehkochann/">
+            <img class="nav-icon" src="../images/icons/twitter.svg"/>
+          </a>
+        </div>
     </footer>
-
 </body>
 </html>

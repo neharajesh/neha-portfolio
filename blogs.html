@@ -8,61 +8,54 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <nav class="navigation container">
-        <div class="nav-brand">Neha<span style="color: var(--light-primary)">Rajesh</span></div>
-        <ul class="list-no-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link" href="/">Home</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/projects.html">Projects</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link link-active" href="/blogs.html">Blogs</a>
-            </li>
-        </ul>
+    <nav>
+      <div class="brandname">NR</div>
+        <div class="container-nav">
+          <a class="nav-icon-tag" href="/">
+            <img class="nav-icon" src="images/icons/home-filled.svg"/>
+          </a>
+          <a class="nav-icon-tag" href="/projects.html">
+            <img class="nav-icon" src="images/icons/projects-unfilled.svg"/>
+          </a>
+          <a class="nav-icon-tag" href="/blogs.html">
+            <img class="nav-icon" src="images/icons/blog-unfilled.svg"/>
+          </a>
+        </div>
     </nav>
-
-    <header class="hero">
-        <img class="hero-image" src="/images/webdev.svg"/>
-        <h1 class="hero-heading">Neha's 
-            <span style="color: var(--primary-color)">Blogs</span></h1>
-    </header>
-
-    <section class="blog section ow">
-        <h1>Introduction to Spring Framework</h1>
+    <div class="container-page">
+      <div class="container-content">
+        <h2>Introduction to Spring Framework</h2>
         <div class="container container-center">
-            <p>
-                Introduction to Spring Framework and how it is used in Java. 
-            </p> <a href="/articles/First_IntroToSF.html" class="link link-primary">Read Now</a>
+            <p> Introduction to Spring Framework and how it is used in Java. </p> 
+            <a href="/articles/First_IntroToSF.html" class="button-primary">Read Now</a>
         </div>
-    </section>
-
-    <section class="blog section">
-        <h1>Inversion of Control and Dependency Injection</h1>
+      </div>
+      <div class="container-content">
+        <h2>Inversion of Control and Dependency Injection</h2>
         <div class="container container-center">
-            <p>
-                What Inversion of Control is and why it is used.
-            </p> <a href="/articles/Second_DIandIoC.html" class="link link-primary">Read Now</a>
+            <p> What Inversion of Control is and why it is used. </p>
+            <a href="/articles/Second_DIandIoC.html" class="button-primary">Read Now</a>
         </div>
-    </section>
-
-    <section class="blog section ow">
-        <h1>Dummy Project Title</h1>
+      </div>
+      <div class="container-content">
+        <h2>Dummy Project Title</h2>
         <div class="container container-center">
-            <p>
-                Dummy Project Summary
-            </p> <a href="/articles/DummyArticle.html" class="link link-primary">Read Now</a>
+            <p> Dummy Project Summary </p> 
+            <a href="/articles/DummyArticle.html" class="button-primary">Read Now</a>
         </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-heading">Let's Connect!</div>
-        <ul class="list-no-bullet link-social">
-            <li class="list-item-inline"> <a class="link" href="https://github.com/neharajesh">GitHub</a> </li>
-            <li class="list-item-inline"> <a class="link" href="https://www.linkedin.com/in/neha-rajesh-a95343122/">LinkedIn</a> </li>
-        </ul>
+    </div>
+    <footer>
+      <div>
+        <a class="nav-icon-tag" href="https://github.com/neharajesh">
+          <img class="nav-icon" src="images/icons/github.svg"/>
+        </a>
+        <a class="nav-icon-tag" href="https://www.linkedin.com/in/neha-rajesh-a95343122/">
+          <img class="nav-icon" src="images/icons/linkedin.svg"/>
+        </a>
+        <a class="nav-icon-tag" href="https://www.twitter.com/nehkochann/">
+          <img class="nav-icon" src="images/icons/twitter.svg"/>
+        </a>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>

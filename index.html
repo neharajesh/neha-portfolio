@@ -4,66 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Neha</title>
-    <!-- removed all favicon related stuff -->
-    <!-- TODO: add favicons -->
-    <link rel="stylesheet" href="/newstyles.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <!-- header -->
     <nav>
       <div class="brandname">NR</div>
-      <!-- replace this with hamburger menu -->
-      <div class="nav-list-container">
-        <ul class="nav-list">
-          <li class="list-item-inline">
-            <a class="nav-icon-tag" href="/"
-              ><img class="nav-icon" src="images/icons/home-filled.svg"
-            /></a>
-          </li>
-          <li class="list-item-inline">
-            <a class="nav-icon-tag" href="/projects.html"
-              ><img class="nav-icon" src="images/icons/projects-unfilled.svg"
-            /></a>
-          </li>
-          <li class="list-item-inline">
-            <a class="nav-icon-tag" href="/blogs.html"
-              ><img class="nav-icon" src="images/icons/blog-unfilled.svg"
-            /></a>
-          </li>
-        </ul>
-      </div>
+        <div class="container-nav">
+          <a class="nav-icon-tag" href="/">
+            <img class="nav-icon" src="images/icons/home-filled.svg"/>
+          </a>
+          <a class="nav-icon-tag" href="/projects.html">
+            <img class="nav-icon" src="images/icons/projects-unfilled.svg"/>
+          </a>
+          <a class="nav-icon-tag" href="/blogs.html">
+            <img class="nav-icon" src="images/icons/blog-unfilled.svg"/>
+          </a>
+        </div>
     </nav>
 
-    <div class="page">
-      <section class="section-container about-me-section">
-        <!-- <h1 class="section-name">About Me!</h1> -->
-        <div class="about-me-text">
-          <h1 class="section-name">Hello!</h1>
-          <p>
-            I'm <span style="font-weight: bolder">Neha Rajesh</span> from
-            Bangalore. An aspiring full stack developer and learner!
-          </p>
-          <p>I spend most of my time coding or learning new languages.</p>
-          <p>
-            This is some more text. I might add more text here soon, but this is
-            just to add a paragraph of text so I can see how it actually looks
-            on the website.
-          </p>
-          <p>
-            p tags add paragraphs of data. I'm learning under neogcamp. My table
-            is all set up well and i feel quite focused for this sunday.
-            Saturday night I'm going to get everything ready for class and start
-            off the day well.
-          </p>
-          <p>This is the last paragraph.</p>
-        </div>
-        <img class="neha-img" src="/images/neha.jpg" />
-      </section>
+    <section>
+      <div class="container-horizontal margin-1 padding-1">
+        <img class="img-about-me" src="/images/neha.jpg" />
+          <div class="section-text">
+            <p class="font-bold font-large">Hello!</p>
+            <p>
+              I'm <span class="font-bold">Neha Rajesh</span> from
+              Bangalore. An aspiring full stack developer and learner!
+            </p>
+            <p>I spend most of my time coding or learning new languages.</p>
+            <p>
+              This is some more text. I might add more text here soon, but this is
+              just to add a paragraph of text so I can see how it actually looks
+              on the website.
+            </p>
+            <p>
+              p tags add paragraphs of data. I'm learning under neogcamp. My table
+              is all set up well and i feel quite focused for this sunday.
+              Saturday night I'm going to get everything ready for class and start
+              off the day well.
+            </p>
+            <p>This is the last paragraph.</p>
+          </div>
+      </div>
+    </section>
 
-      <section class="section-container">
+    <div class="container-horizontal container-links">
+      <div class="container-link"><a href="/projects.html">My Projects</a></div>
+      <div class="container-link"><a href="/blogs.html">My Blogs</a></div>
+    </div>
+
+      <!-- <section class="section-container">
         <div class="section-summary">
           <h1 class="section-name">Technologies I work with</h1>
-          <!-- <p>These are the technologies that I work with</p> -->
+           <p>These are the technologies that I work with</p>
         </div>
         <div class="technologies">
           <div class="technology-container">
@@ -132,7 +125,7 @@
       <section class="section-container">
         <div class="section-summary">
           <h1 class="section-name">Projects I have been working on</h1>
-          <!-- <p>Here are some projects that I have been working on.</p> -->
+           <p>Here are some projects that I have been working on.</p> 
         </div>
         <div class="projects">
           <div class="projects-container">
@@ -197,7 +190,7 @@
       <section class="section-container">
         <div class="section-summary">
           <h1 class="section-name">Blogs I have written</h1>
-          <!-- <p>These are the blogs that I have written</p> -->
+           <p>These are the blogs that I have written</p> 
         </div>
         <div class="blogs">
           <div class="blogs-container">
@@ -231,29 +224,19 @@
           </div>
         </div>
       </section>
-    </div>
+    </div> -->
 
-    <footer class="footer">
+    <footer>
       <div>
-        <ul class="social-link-list">
-          <li class="list-item-inline">
-            <a class="social-link" href="https://github.com/neharajesh"
-              ><img class="nav-icon" src="images/icons/github.svg"
-            /></a>
-          </li>
-          <li class="list-item-inline">
-            <a
-              class="social-link"
-              href="https://www.linkedin.com/in/neha-rajesh-a95343122/"
-              ><img class="nav-icon" src="images/icons/linkedin.svg"
-            /></a>
-          </li>
-          <li class="list-item-inline">
-            <a class="social-link" href="https://www.twitter.com/nehkochann/"
-              ><img class="nav-icon" src="images/icons/twitter.svg"
-            /></a>
-          </li>
-        </ul>
+        <a class="nav-icon-tag" href="https://github.com/neharajesh">
+          <img class="nav-icon" src="images/icons/github.svg"/>
+        </a>
+        <a class="nav-icon-tag" href="https://www.linkedin.com/in/neha-rajesh-a95343122/">
+          <img class="nav-icon" src="images/icons/linkedin.svg"/>
+        </a>
+        <a class="nav-icon-tag" href="https://www.twitter.com/nehkochann/">
+          <img class="nav-icon" src="images/icons/twitter.svg"/>
+        </a>
       </div>
     </footer>
   </body>
