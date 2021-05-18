@@ -186,7 +186,6 @@ section {
     font-size: 0.9em;
     text-decoration: none;
     color: black;
-    line-height: 1em;
 }
 
 .sidebar-link:hover {
@@ -198,16 +197,43 @@ section {
     margin-left: 2rem; 
 }
 
+.blog-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.blog-stats {
+    color: #707E91;
+    margin: 0;
+    padding: 0;
+    height: 1.2rem;
+}
+
 .blog-section-title {
     font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 .blog-section-content {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.25rem;
     text-align: justify;
+}
+
+.blog-list-numbered {
+    list-style: decimal;
+}
+
+pre {
+    border: none;
+    border-radius: 5px;
+    height: auto;
+    width: 30vw;
+    margin: 1rem 0;
+    margin-left: 3rem;
+    padding: 1rem 0.5rem;
+    display: block;
+    background: rgb(202, 202, 202);
 }
 
 /* FOOTER */

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Neha</title>
+    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico"/>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <div class="brandname">NR</div>
+          <div class="container-nav">
+            <a class="nav-icon-tag" href="/">
+              <img class="nav-icon" src="../images/icons/home-filled.svg"/>
+            </a>
+            <a class="nav-icon-tag" href="/projects.html">
+              <img class="nav-icon" src="../images/icons/projects-unfilled.svg"/>
+            </a>
+            <a class="nav-icon-tag" href="/blogs.html">
+              <img class="nav-icon" src="../images/icons/blog-unfilled.svg"/>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-blogpage">
+        <div class="sidebar">
+            <h3>Links to other blogs</h3>
+            <div>
+                <li> <a class="sidebar-link" href="First_IntroToSF.html">Introduction to Spring Framework</a> </li>
+                <li> <a class="sidebar-link" href="Second_DIandIoC.html">Inversion of Control and Dependency Injection</a> </li>
+                <li> <a class="sidebar-link" href="DataModelling.html">Data Modelling</a> </li>
+            </div>
+        </div>
+        <div class="blogpart">
+            <p class="blog-title">DATA MODELLING</p>
+            <p class="blog-stats">Neha Rajesh</p>
+            <p class="blog-stats">4 min read</p>
+            <p class="blog-section-title">Introduction</p>
+            <p class="blog-section-content">Data modelling is the process of creating a model for the data to be stored in a database. This is a conceptual representation of data and the relationship  and rules between different data and objects. Simply put, data modelling helps to build conceptual models and set a relationship between data items.</p>
+            <p>Data modelling helps visually represent data and it's relationships. They ensure consistency in naming, default values, semantics and security while maintaining the quality of data.</p>
+
+            <p class="blog-section-title">What is a Data Model?</p>
+            <p class="blog-section-content">A Data Model is an abstract model that organizes data. It emphasizes on what data is needed and how it should be organized, instead of what operations will be performed on it. </p>
+
+            <p class="blog-section-title">Data Modelling Techniques</p>
+            <p class="blog-section-content">There are two types of Data Modelling Techniques: 
+              <ul>
+                <li class="blog-list-numbered">Entity Relationship Models ⇒ ER Models</li>
+                <li class="blog-list-numbered">Unified Modelling Language ⇒ UML</li>
+              </ul>
+            </p>
+
+            <p class="blog-section-title">Why should we model data?</p>
+            <p class="blog-section-content">
+              <ul>
+                <li class="blog-list-numbered">To ensure that all the data required by the database are accurately represented. </li>
+                <li class="blog-list-numbered">Helps design the database at the physical, conceptual and logical levels.</li>
+                <li class="blog-list-numbered">Provides a clear picture of the base data that can be used to create a physical database.</li>
+                <li class="blog-list-numbered">Helps identify missing and redundant data.</li>
+                <li class="blog-list-numbered">Helps make IT infrastructure upgrades and maintanance easier, cheaper and faster.</li>
+              </ul>
+            </p>
+
+            <p class="blog-section-title">Types of Data Models</p>
+            <p class="blog-section-content">
+              <ul>
+                <li class="blog-list-numbered">Conceptual Data Models
+                  <p>This defines <em>what</em> the system contains. It's purpose is to organize, scope and define business concepts and rules</p>
+                </li>
+                <li class="blog-list-numbered">Logical Data Models
+                  <p>This defines <em>how</em> the system should be implemented, regardless of the database and it's data. It's purpose is to develop a technical map of rules and data structures.</p>
+                </li>
+                <li class="blog-list-numbered">Physical Data Models
+                  <p>This describes <em>how</em> the system will be implemented using a specific database. It's purpose is the actual implementation of the database.</p>
+                </li>
+              </ul>
+            </p>
+
+            <p class="blog-section-title">So, How do you create a Data Model?</p>
+            <p class="blog-section-content">In javascript, you create data models by creating objects. The key will be the field and value will hold whatever value you want to store in the field. </p>
+            <p>For example, a basic products data model will look like this :</p>
+            <pre><code>   const products = {
+      id: 1234, //number or id
+      name: "Product Name", //string
+      description: "Product Description", //string
+      brand: "Product Brand", //string
+      price: 12.34, //number
+   }</code></pre>
+            <p>The key is the field, value is the value we want the field to have and in comments is the data type of the values this field can store.</p>
+            <p>We always create data models as objects because this helps keep the database sizable. </p>
+
+            <p class="blog-section-title">Conclusion</p>
+            <p class="blog-section-content">Data modelling is the process of developing models for the data to be stored in a database. These ensure consistency in naming, default values, semantics and security while ensuring quality of data. Data modelling helps to define relational tables, primary and foreign keys and stored procedures. The main goal of designing a database is to make certain that data objects offered are represented accurately. The biggest drawback is that even small changes made in structure require modification in the entire application.</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+          <a class="nav-icon-tag" href="https://github.com/neharajesh">
+            <img class="nav-icon" src="../images/icons/github.svg"/>
+          </a>
+          <a class="nav-icon-tag" href="https://www.linkedin.com/in/neha-rajesh-a95343122/">
+            <img class="nav-icon" src="../images/icons/linkedin.svg"/>
+          </a>
+          <a class="nav-icon-tag" href="https://www.twitter.com/nehkochann/">
+            <img class="nav-icon" src="../images/icons/twitter.svg"/>
+          </a>
+        </div>
+    </footer>
+</body>
+</html>
