@@ -215,6 +215,11 @@ section {
     margin-top: 1.5rem;
 }
 
+.blog-section-subtitle {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
 .blog-section-content {
     margin-top: 0.25rem;
     text-align: justify;
@@ -234,6 +239,15 @@ pre {
     padding: 1rem 0.5rem;
     display: block;
     background: rgb(202, 202, 202);
+}
+
+.txt-highlighted {
+    font-size: 0.9em;
+    padding: 0.2rem;
+    color: darkred;
+    background: rgb(196, 196, 196);
+    border: 0.75px solid grey;
+    border-radius: 2px;
 }
 
 /* FOOTER */

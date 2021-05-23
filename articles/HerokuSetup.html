@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Neha</title>
+    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico"/>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <div class="brandname">NR</div>
+          <div class="container-nav">
+            <a class="nav-icon-tag" href="/">
+              <img class="nav-icon" src="../images/icons/home-filled.svg"/>
+            </a>
+            <a class="nav-icon-tag" href="/projects.html">
+              <img class="nav-icon" src="../images/icons/projects-unfilled.svg"/>
+            </a>
+            <a class="nav-icon-tag" href="/blogs.html">
+              <img class="nav-icon" src="../images/icons/blog-unfilled.svg"/>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-blogpage">
+        <div class="sidebar">
+            <h3>Links to other blogs</h3>
+            <div>
+                <li> <a class="sidebar-link" href="First_IntroToSF.html">Introduction to Spring Framework</a> </li>
+                <li> <a class="sidebar-link" href="Second_DIandIoC.html">Inversion of Control and Dependency Injection</a> </li>
+                <li> <a class="sidebar-link" href="DataModelling.html">Data Modelling</a> </li>
+                <li> <a class="sidebar-link" href="HerokuSetup.html">Heroku Setup</a> </li>
+            </div>
+        </div>
+        <div class="blogpart">
+            <p class="blog-title">HEROKU SETUP FOR MERN STACK APPLICATION</p>
+            <p class="blog-stats">Neha Rajesh</p>
+            <p class="blog-stats">3 min read</p> 
+            <p class="blog-section-title">Introduction</p>
+            <p class="blog-section-content">Heroku is a cloud service platform that enables simple application development and deployment. Since the Heroku platform manages hardware and servers, businesses that use Heroku are able to focus on perfecting their apps and not the infrastructure that supports them.</p>
+            <p>Heroku is based on a managed container system. It has integrated data services and a powerful ecosystem for deploying and running modern applications.</p>
+            <p>Applications as services use containers which are designed to package and run services. Applications that are run on Heroku have unique domain names which are used to route HTTP requests to the correct container. These containers are called dynos. </p>
+
+            <p class="blog-section-title">Heroku Setup</p>
+            <p class="blog-section-subtitle">Basic Setup</p>
+            <p class="blog-section-content">Once the application you want to deploy is ready, download the Heroku CLI installer and install it. Also check <span class="txt-highlighted">npm, node and git</span> versions.</p>
+            <p>Login to your Heroku account ( create one if you don't have one already ). You can log in using <span class="txt-highlighted">heroku login</span></p>
+
+            <p class="blog-section-subtitle">Deploying your Application</p>
+            <p class="blog-section-content">To create a container for your application, type <span class="txt-highlighted">heroku create</span> This prepares Heroku to receive your source code.</p>
+            <p>Once the app has been created, push your code to the heroku remote. You can do this by using <span class="txt-highlighted">git push heroku main</span></p>
+            <p>If your code is on a branch other than main or master, use <span class="txt-highlighted">git push heroku branch_name : main</span></p>
+            <p>This builds and deploys your application.</p>
+            <p>To check if atleast one instance of your application is running, try <span class="txt-highlighted">heroku ps : scale web=1</span></p>
+            <p>You can visit the URL seen to open your app or you can type in heroku open on the CLI to open the application.</p>
+            <p>To fetch data from the application, you can use this URL.</p>
+
+            <p class="blog-section-subtitle">View Logs</p>
+            <p class="blog-section-content">To view logs, you can use the <span class="txt-highlighted">heroku logs --tail</span> command. This streams logs as time-ordered events. <span class="txt-highlighted">ctrl C</span> will stop streaming the logs.</p>
+
+            <p class="blog-section-subtitle">Define a Procfile</p>
+            <p>Procfile is a text file in the root directory of your app. It is used to explicitly declare what command should be used to run your application.</p>
+            <p><span class="txt-highlighted">web: npm start</span> can be added to your Procfile with a script for start in your <span class="txt-highlighted">package.json file</span> </p>
+
+            <p class="blog-section-subtitle">Add MongoDB URI</p>
+            <p class="blog-section-content">Open your application from your Dashboard. </p>
+            <p>Add your MongoDB URI to the <span class="txt-highlighted">Config Vars</span> of your application found on the Settings page. </p>
+            <p>Set key same as what you've added to the .env file on your Backend and value as the URI.</p>
+
+            <p class="blog-section-subtitle">Running the App Locally</p>
+            <p class="blog-section-content">To run the application locally, use <span class="txt-highlighted">heroku local web</span></p>
+
+            <br>
+
+            <p>Once you've added changes to your git repo, make sure to push changes to the heroku remote also to see the same changes on your Heroku Application.</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+          <a class="nav-icon-tag" href="https://github.com/neharajesh">
+            <img class="nav-icon" src="../images/icons/github.svg"/>
+          </a>
+          <a class="nav-icon-tag" href="https://www.linkedin.com/in/neha-rajesh-a95343122/">
+            <img class="nav-icon" src="../images/icons/linkedin.svg"/>
+          </a>
+          <a class="nav-icon-tag" href="https://www.twitter.com/nehkochann/">
+            <img class="nav-icon" src="../images/icons/twitter.svg"/>
+          </a>
+        </div>
+    </footer>
+</body>
+</html>
